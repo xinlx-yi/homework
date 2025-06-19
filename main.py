@@ -18,7 +18,7 @@ def main():
     driver = init_driver()
 
     db = DBHandler(
-        server='DESKTOP-5IK5K0N\\MSSQL2022',
+        server='localhost',
         database='microsoft'
     )
 
