@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 認證學習平台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Microsoft 認證學習平台</h1>
+            <p>探索 Microsoft 認證課程和模組</p>
+        </header>
+
+        <main class="main-content">
+            <!-- 認證列表 -->
+            <section class="certifications">
+                <h2>認證項目</h2>
+                <div class="cert-list" id="certList">
+                    <div class="loading">載入中...</div>
+                </div>
+            </section>
+
+            <!-- 課程列表 -->
+            <section class="courses" id="coursesSection" style="display: none;">
+                <h2>相關課程</h2>
+                <div class="back-btn" id="backToCerts">← 返回認證列表</div>
+                <div class="course-list" id="courseList">
+                </div>
+            </section>
+
+            <!-- 模組列表 -->
+            <section class="modules" id="modulesSection" style="display: none;">
+                <h2>課程模組</h2>
+                <div class="back-btn" id="backToCourses">← 返回課程列表</div>
+                <div class="module-list" id="moduleList">
+                </div>
+            </section>
+        </main>
+
+        <!-- 詳細資訊面板 -->
+        <aside class="detail-panel" id="detailPanel">
+            <div class="detail-content">
+                <h3 id="detailTitle">選擇項目查看詳細資訊</h3>
+                <p id="detailDescription">點擊左側項目來查看詳細說明</p>
+                <a id="detailLink" href="#" target="_blank" style="display: none;">查看原始頁面</a>
+            </div>
+        </aside>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
